@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #eee;
+}
+
+.container{
+    font-family: "candara" sans-serif;
+    width: 340px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1)
+}
+
+.container-image img{
+    width: 100%;
+    height: 160px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+
+.card-image img{
+    z-index: 1;
+    width: 160px;
+    height: 160px;
+    position: relative;
+    margin-top: -75px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+    border: 5px solid white;
+    transition transition-property: transform:;
+    transition-duration: 0.4s;
+}
+
+.card-image img:hover{
+    transform: scale(1.1);
+}
+
+.Details h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+.Details span{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: center;
+}
+.Details p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+hr{
+    margin-top: 1rem;
+    opacity: 0.3;
+    width: 100%;
+}
+.Rating{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    line-height: 5px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.Rating h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    text-align: center;
+
+}
+.Rating p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 8px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+    .container{
+        margin-top: 8rem;
+    }
+}
